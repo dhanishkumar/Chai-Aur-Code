@@ -1,8 +1,16 @@
 import React from 'react';
-function App() {
+import Chai from './chai';
 
+
+function App() {
+  // How to Inject Javascript Varibles
+  const username="Chai With Dhnaish"
   return (
-    <h1>hello react</h1>
+    <>
+    <Chai/>
+    <h1>This is Chai {username}</h1>
+    <p>Hello Chai</p>
+    </>
   )
 }
 
