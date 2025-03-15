@@ -11,7 +11,10 @@ function App() {
   // Create Function for Add Value and Never go to uppar 20
   const addValue = () => {
     if (counter < 20) {
-      setCounter(counter + 1)
+      // setCounter(counter+1)
+      setCounter(prevCounter =>prevCounter+ 1) // Reapet add value
+      setCounter(prevCounter =>prevCounter+ 1)
+      setCounter(prevCounter =>prevCounter+ 1)
     }
   }
 
